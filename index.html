@@ -5,23 +5,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home</title>
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="container-fluid justify-content-lg-between>
-      <svg id="logo-35" width="50" height="39" viewBox="0 0 50 39" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M16.4992 2H37.5808L22.0816 24.9729H1L16.4992 2Z" class="ccompli1" fill="#007AFF"></path>
-        <path
-          d="M17.4224 27.102L11.4192 36H33.5008L49 13.0271H32.7024L23.2064 27.102H17.4224Z"
-          class="ccustom"
-          fill="#312ECB"
-        ></path>
-      </svg>
-      <svg class="bi" width="32" height="32" fill="currentColor">
-        <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#person" />
-      </svg>
-      <a class="btn btn-outline-primary" href="sign-in.html">Sign in</a>
+    <header
+      class="container-fluid bg-body-secondary py-4 px-5 d-flex justify-content-between border-bottom border-1 border-success border-success-subtle"
+    >
+      <div>
+        <svg id="logo-35" width="50" height="39" viewBox="0 0 50 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M16.4992 2H37.5808L22.0816 24.9729H1L16.4992 2Z" class="ccompli1" fill="#007AFF"></path>
+          <path
+            d="M17.4224 27.102L11.4192 36H33.5008L49 13.0271H32.7024L23.2064 27.102H17.4224Z"
+            class="ccustom"
+            fill="#312ECB"
+          ></path>
+        </svg>
+        <span>Purchase Request System</span>
+      </div>
+
+      <a class="btn btn-primary" href="sign-in.html"
+        ><svg class="bi" width="32" height="32" fill="currentColor">
+          <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#person" /></svg
+        >Sign In</a
+      >
     </header>
-    <h1>Homepage</h1>
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <main class="d-flex p-0">
+      <nav class="bg-body-secondary vh-100 px-1 py-3 border-end border-2">
+        <div class="btn-group dropend">
+          <button
+            type="button"
+            class="btn text-primary dropdown-toggle"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Create New
+          </button>
+          <ul class="dropdown-menu"></ul>
+        </div>
+
+        <ul class="nav nav-pills flex-column ps-4">
+          <li class="mb-2 text-secondary">Purchases</li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#"
+              ><svg class="bi me-2" width="16" height="16" fill="currentColor">
+                <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#cart" /></svg
+              >Requests</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#"
+              ><svg class="bi me-2" width="16" height="16" fill="currentColor">
+                <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#grid" /></svg
+              >Vendors</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#"
+              ><svg class="bi me-2" width="16" height="16" fill="currentColor">
+                <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#building" /></svg
+              >Products</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#"
+              ><svg class="bi me-2" width="16" height="16" fill="currentColor">
+                <use xlink:href="./node_modules/bootstrap-icons/bootstrap-icons.svg#people" /></svg
+              >Users</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <section class="container">
+        <h3>Purchase Request System</h3>
+        <hr />
+      </section>
+    </main>
+    <script src="./node_modlies/bootstrap/dist/js/bootstrap.bundle.js"></script>
   </body>
 </html>
