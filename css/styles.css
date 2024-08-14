@@ -4,6 +4,10 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
+main {
+  min-height: 100vh;
+}
+
 a {
   --bs-link-color-rgb: 0, 122, 255;
 }
@@ -15,11 +19,6 @@ a {
 
 .nav {
   --bs-nav-link-padding-y: 0.6rem;
- 
-}
-
-nav {
-  width: 20rem;
 }
 
 .request-header {
@@ -28,7 +27,9 @@ nav {
   grid-template-rows: 1fr;
 }
 
-
+/* table th {
+  width: auto !important;
+} */
 
 .card > .progress {
   height: 0.1875rem;
@@ -49,8 +50,4 @@ nav {
 .signin {
   background: rgb(214, 242, 255);
   background: radial-gradient(circle, rgba(214, 242, 255, 1) 31%, rgba(237, 250, 255, 1) 60%);
-}
-
-li:hover {
-  background-color: rgb(187, 185, 185);
 }
